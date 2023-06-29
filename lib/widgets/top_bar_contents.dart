@@ -61,6 +61,44 @@ class _TopBarContentsState extends State<TopBarContents> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text(
+                            'Home',
+                            style: TextStyle(
+                                color: _isHovering[0]
+                                    ? Color(0xFF077bd7)
+                                    : Color(0xFF077bd7),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Visibility(
+                            maintainAnimation: true,
+                            maintainState: true,
+                            maintainSize: true,
+                            visible: _isHovering[0],
+                            child: Container(
+                              height: 2,
+                              width: 20,
+                              color: Color(0xFF051441),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: screenSize.width / 15),
+                    InkWell(
+                      onHover: (value) {
+                        setState(() {
+                          value
+                              ? _isHovering[0] = true
+                              : _isHovering[0] = false;
+                        });
+                      },
+                      onTap: () {},
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
                             'Event',
                             style: TextStyle(
                                 color: _isHovering[0]
@@ -85,7 +123,120 @@ class _TopBarContentsState extends State<TopBarContents> {
                         ],
                       ),
                     ),
-
+                    SizedBox(width: screenSize.width / 15),
+                    InkWell(
+                      onHover: (value) {
+                        setState(() {
+                          value
+                              ? _isHovering[0] = true
+                              : _isHovering[0] = false;
+                        });
+                      },
+                      onTap: () {},
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'Calculator',
+                            style: TextStyle(
+                                color: _isHovering[0]
+                                    ? Color(0xFF077bd7)
+                                    : Color(0xFF077bd7),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Visibility(
+                            maintainAnimation: true,
+                            maintainState: true,
+                            maintainSize: true,
+                            visible: _isHovering[0],
+                            child: Container(
+                              height: 2,
+                              width: 20,
+                              color: Color(0xFF051441),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: screenSize.width / 15),
+                    InkWell(
+                      onHover: (value) {
+                        setState(() {
+                          value
+                              ? _isHovering[0] = true
+                              : _isHovering[0] = false;
+                        });
+                      },
+                      onTap: () {},
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'SearchBar',
+                            style: TextStyle(
+                                color: _isHovering[0]
+                                    ? Color(0xFF077bd7)
+                                    : Color(0xFF077bd7),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Visibility(
+                            maintainAnimation: true,
+                            maintainState: true,
+                            maintainSize: true,
+                            visible: _isHovering[0],
+                            child: Container(
+                              height: 2,
+                              width: 20,
+                              color: Color(0xFF051441),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: screenSize.width / 15),
+                    InkWell(
+                      onHover: (value) {
+                        setState(() {
+                          value
+                              ? _isHovering[0] = true
+                              : _isHovering[0] = false;
+                        });
+                      },
+                      onTap: () {},
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'Account',
+                            style: TextStyle(
+                                color: _isHovering[0]
+                                    ? Color(0xFF077bd7)
+                                    : Color(0xFF077bd7),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Visibility(
+                            maintainAnimation: true,
+                            maintainState: true,
+                            maintainSize: true,
+                            visible: _isHovering[0],
+                            child: Container(
+                              height: 2,
+                              width: 20,
+                              color: Color(0xFF051441),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
