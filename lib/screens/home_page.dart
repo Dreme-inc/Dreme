@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage> {
         : 1;
 
     return Scaffold(
+      extendBodyBehindAppBar: true,
     appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 70),
         child: TopBarContents(_opacity),
@@ -57,7 +58,13 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-
+                Column(
+                  children: [
+                    FloatingQuickAccessBar(screenSize: screenSize),
+                    FeaturedHeading(screenSize: screenSize),
+                    FeaturedTiles(screenSize: screenSize),
+                  ],
+                )
               ],
             ),
 

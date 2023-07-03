@@ -79,7 +79,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                             child: Container(
                               height: 2,
                               width: 20,
-                              color: Color(0xFF051441),
+                              color: Colors.blue,
                             ),
                           )
                         ],
@@ -90,8 +90,8 @@ class _TopBarContentsState extends State<TopBarContents> {
                       onHover: (value) {
                         setState(() {
                           value
-                              ? _isHovering[0] = true
-                              : _isHovering[0] = false;
+                              ? _isHovering[1] = true
+                              : _isHovering[1] = false;
                         });
                       },
                       onTap: () {},
@@ -101,7 +101,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           Text(
                             'Event',
                             style: TextStyle(
-                                color: _isHovering[0]
+                                color: _isHovering[1]
                                     ? Color(0xFF077bd7)
                                     : Color(0xFF077bd7),
                                 fontWeight: FontWeight.bold,
@@ -113,11 +113,11 @@ class _TopBarContentsState extends State<TopBarContents> {
                             maintainAnimation: true,
                             maintainState: true,
                             maintainSize: true,
-                            visible: _isHovering[0],
+                            visible: _isHovering[1],
                             child: Container(
                               height: 2,
                               width: 20,
-                              color: Color(0xFF051441),
+                              color: Colors.blue,
                             ),
                           )
                         ],
@@ -128,8 +128,8 @@ class _TopBarContentsState extends State<TopBarContents> {
                       onHover: (value) {
                         setState(() {
                           value
-                              ? _isHovering[0] = true
-                              : _isHovering[0] = false;
+                              ? _isHovering[2] = true
+                              : _isHovering[2] = false;
                         });
                       },
                       onTap: () {},
@@ -139,7 +139,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           Text(
                             'Calculator',
                             style: TextStyle(
-                                color: _isHovering[0]
+                                color: _isHovering[2]
                                     ? Color(0xFF077bd7)
                                     : Color(0xFF077bd7),
                                 fontWeight: FontWeight.bold,
@@ -151,7 +151,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                             maintainAnimation: true,
                             maintainState: true,
                             maintainSize: true,
-                            visible: _isHovering[0],
+                            visible: _isHovering[2],
                             child: Container(
                               height: 2,
                               width: 20,
@@ -166,8 +166,8 @@ class _TopBarContentsState extends State<TopBarContents> {
                       onHover: (value) {
                         setState(() {
                           value
-                              ? _isHovering[0] = true
-                              : _isHovering[0] = false;
+                              ? _isHovering[3] = true
+                              : _isHovering[3] = false;
                         });
                       },
                       onTap: () {},
@@ -177,7 +177,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           Text(
                             'SearchBar',
                             style: TextStyle(
-                                color: _isHovering[0]
+                                color: _isHovering[3]
                                     ? Color(0xFF077bd7)
                                     : Color(0xFF077bd7),
                                 fontWeight: FontWeight.bold,
@@ -189,7 +189,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                             maintainAnimation: true,
                             maintainState: true,
                             maintainSize: true,
-                            visible: _isHovering[0],
+                            visible: _isHovering[3],
                             child: Container(
                               height: 2,
                               width: 20,
@@ -204,8 +204,8 @@ class _TopBarContentsState extends State<TopBarContents> {
                       onHover: (value) {
                         setState(() {
                           value
-                              ? _isHovering[0] = true
-                              : _isHovering[0] = false;
+                              ? _isHovering[4] = true
+                              : _isHovering[4] = false;
                         });
                       },
                       onTap: () {},
@@ -215,7 +215,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           Text(
                             'Account',
                             style: TextStyle(
-                                color: _isHovering[0]
+                                color: _isHovering[4]
                                     ? Color(0xFF077bd7)
                                     : Color(0xFF077bd7),
                                 fontWeight: FontWeight.bold,
@@ -227,7 +227,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                             maintainAnimation: true,
                             maintainState: true,
                             maintainSize: true,
-                            visible: _isHovering[0],
+                            visible: _isHovering[4],
                             child: Container(
                               height: 2,
                               width: 20,
