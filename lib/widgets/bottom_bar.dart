@@ -14,18 +14,6 @@ class BottomBar extends StatelessWidget {
     return Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(0.0)),
-          boxShadow: <BoxShadow>[
-            BoxShadow(
-              color: gradientStartColor,
-              offset: Offset(1.0, 6.0),
-              blurRadius: 1.0,
-            ),
-            BoxShadow(
-              color: gradientEndColor,
-              offset: Offset(1.0, 6.0),
-              blurRadius: 1.0,
-            ),
-          ],
           gradient: LinearGradient(
               colors: [
                 gradientStartColor,

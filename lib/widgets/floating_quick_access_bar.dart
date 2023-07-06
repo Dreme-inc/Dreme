@@ -1,4 +1,4 @@
-import 'package:flutter_web/widgets/responsive.dart';
+ import 'package:flutter_web/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
 class FloatingQuickAccessBar extends StatefulWidget {
@@ -46,8 +46,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
       );
       Widget spacer = SizedBox(
         height: widget.screenSize.height / 20,
-        child: VerticalDivider(
-          width: 1,
+        child: Divider(
           color: Colors.blueGrey[100],
           thickness: 1,
         ),
