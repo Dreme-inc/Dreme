@@ -70,7 +70,7 @@ class MenuDrawer extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2021 | DBestech',
+                    'Copyright © 2023 | Drunk Dreme',
                     style: TextStyle(
                       color: Colors.blueGrey.shade300,
                       fontSize: 14,
