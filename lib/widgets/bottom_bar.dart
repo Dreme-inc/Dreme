@@ -36,7 +36,6 @@ class BottomBar extends StatelessWidget {
                       heading: 'ABOUT',
                       s1: 'Contact Us',
                       s2: 'About Us',
-                      s3: 'Careers',
                     ),
                     Container(
                       color: Colors.white,
@@ -47,14 +46,10 @@ class BottomBar extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         InfoText(
-                          type: 'Email',
-                          text: 'dylan@gmail.com',
+                          type: 'Prévention',
+                          text: 'Alcool info service : 0 980 980 930 \n (depuis la France ; 7/7 jrs de 8h à 2h - coût d\'un appel local)',
                         ),
-                        SizedBox(height: 5),
-                        InfoText(
-                          type: 'Address',
-                          text: '128, Trymore Road, Delft, MN - 56124',
-                        )
+
                       ],
                     ),
                   ],
@@ -64,7 +59,7 @@ class BottomBar extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Copyright © 2021 | DBestech',
+                  'Copyright © 2023 | Dreme',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14,

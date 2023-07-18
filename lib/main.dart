@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web/screens/calculator_alcool.dart';
+import 'package:flutter_web/screens/resultat.dart';
 
 import 'screens/home_page.dart';
 
