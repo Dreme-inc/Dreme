@@ -77,10 +77,6 @@ class _HomePageState extends State<HomePage> {
                 Column(
                   children: [
                     FloatingQuickAccessBar(screenSize: screenSize),
-                    FeaturedHeading(screenSize: screenSize),
-                    FeaturedTiles(screenSize: screenSize),
-                    MainHeading(screenSize: screenSize),
-                    MainCarousel(),
                     SizedBox(height: screenSize.height/10),
                     BottomBar(),
                   ],
